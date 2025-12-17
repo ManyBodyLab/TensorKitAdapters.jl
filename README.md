@@ -10,8 +10,8 @@
 |:-----------------:|:-----------------------------:|:------------:|:-------------:|
 | [![][docs-stable-img]][docs-stable-url] [![][docs-dev-img]][docs-dev-url] | [![DOI][doi-img]][doi-url] | | [![Downloads][downloads-img]][downloads-url] -->
 
-| **Build Status** | **PkgEval** | **Coverage** | **Style Guide** | **Quality assurance** |
-|:----------------:|:-----------:|:------------:|:---------------:|:---------------------:|
+| **Build Status** | **Coverage** | **Style Guide** | **Quality assurance** |
+|:----------------:|:------------:|:---------------:|:---------------------:|
 | [![CI][ci-img]][ci-url] | [![PkgEval][pkgeval-img]][pkgeval-url] | [![Codecov][codecov-img]][codecov-url] | [![code style: runic][codestyle-img]][codestyle-url] | [![Aqua QA][aqua-img]][aqua-url] |
 
 [docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
@@ -59,7 +59,17 @@ See "Cite this repository" to the right or [`CITATION.cff`](CITATION.cff) for th
 ## Code Samples
 
 ```julia
-julia> using TensorKitAdapters
+julia> using TensorKitAdapters, TensorKit
+julia> using ITensors
+julia> i = Index([QN("Sz"=>-1)=>2, QN("Sz"=>0)=>1]);
+julia> A = random_itensor(Float64, i, dag(prime(i)));
+julia> T = TensorMap(A);
+julia> A_reconstructed = ITensor(T);
+julia> T_reconstructed = TensorMap(A_reconstructed);
+julia> A ≈ A_reconstructed
+true
+julia> T ≈ T_reconstructed
+true
 ```
 
 ## License

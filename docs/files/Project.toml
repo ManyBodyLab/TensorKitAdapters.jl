@@ -1,0 +1,5 @@
+[deps]
+TensorKitAdapters = "365c3f09-11dd-4b21-ae3b-5ed73578a59c"
+
+[compat]
+TensorKitAdapters = "0.1"

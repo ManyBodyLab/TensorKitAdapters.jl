@@ -1,0 +1,7 @@
+name = "TensorKitAdapters"
+uuid = "365c3f09-11dd-4b21-ae3b-5ed73578a59c"
+authors = ["Andreas Feuerpfeil <development@manybodylab.com> and Lukas Devos"]
+version = "0.1.0"
+
+[compat]
+julia = "1.10"

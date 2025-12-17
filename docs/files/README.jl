@@ -31,4 +31,4 @@
 
 # ## License
 
-# `TensorKitAdapters.jl` is licensed under the [MIT License](LICENSE). By using or interacting with this software in any way, you agree to the license of this software.
+# `TensorKitAdapters.jl` is licensed under the MIT License. By using or interacting with this software in any way, you agree to the license of this software.

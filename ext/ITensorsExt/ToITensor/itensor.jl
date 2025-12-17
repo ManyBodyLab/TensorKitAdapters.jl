@@ -47,13 +47,9 @@ function ITensors.ITensor(t::tk_tensor;
                     break
                 end
             end
-            if multiply_by_two
-                break
-            end
+            multiply_by_two && break
         end
-        if multiply_by_two
-            break
-        end
+        multiply_by_two && break
     end
 
     index_dict=[Dict{Sector, Int}() for _ in eachindex(indices)]

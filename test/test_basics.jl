@@ -4,5 +4,4 @@ using TestExtras
 using TensorKit
 
 @testset "TensorKitAdapters" begin
-    # Tests go here.
 end

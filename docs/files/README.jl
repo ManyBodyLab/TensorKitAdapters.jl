@@ -21,7 +21,7 @@
 # julia> i = Index([QN("Sz"=>-1)=>2, QN("Sz"=>0)=>1]);
 # julia> A = random_itensor(Float64, i, dag(prime(i)));
 # julia> T = TensorMap(A);
-# julia> A_reconstructed = ITensor(T);
+# julia> A_reconstructed = ITensor(T; ids = ITensors.id.(inds(A)), plevs = plev.(inds(A)));
 # julia> T_reconstructed = TensorMap(A_reconstructed);
 # julia> A ≈ A_reconstructed
 # true

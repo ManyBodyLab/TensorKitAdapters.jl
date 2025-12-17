@@ -41,6 +41,8 @@
 [codestyle-img]: https://img.shields.io/badge/code_style-%E1%9A%B1%E1%9A%A2%E1%9A%BE%E1%9B%81%E1%9A%B2-black
 [codestyle-url]: https://github.com/fredrikekre/Runic.jl
 
+`TensorKitAdapters.jl` provides adapters to convert between the `TensorMap` type of [`TensorKit.jl`](https://github.com/QuantumKitHub/TensorKit.jl) and other tensor libraries like [`ITensors.jl`](https://github.com/ITensor/ITensors.jl).
+
 
 ## Installation
 
@@ -62,4 +64,4 @@ julia> using TensorKitAdapters
 
 ## License
 
-TensorKitAdapters.jl is licensed under the [MIT License](LICENSE). By using or interacting with this software in any way, you agree to the license of this software.
+`TensorKitAdapters.jl` is licensed under the [MIT License](LICENSE). By using or interacting with this software in any way, you agree to the license of this software.

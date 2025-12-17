@@ -7,6 +7,7 @@ benchmark/results
 .benchmarkci
 .tmp
 .vscode/
+*.cov
 Manifest.toml
 benchmark/*.json
 dev/

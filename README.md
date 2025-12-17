@@ -12,7 +12,7 @@
 
 | **Build Status** | **Coverage** | **Style Guide** | **Quality assurance** |
 |:----------------:|:------------:|:---------------:|:---------------------:|
-| [![CI][ci-img]][ci-url] | [![PkgEval][pkgeval-img]][pkgeval-url] | [![Codecov][codecov-img]][codecov-url] | [![code style: runic][codestyle-img]][codestyle-url] | [![Aqua QA][aqua-img]][aqua-url] |
+| [![CI][ci-img]][ci-url] | [![Codecov][codecov-img]][codecov-url] | [![code style: runic][codestyle-img]][codestyle-url] | [![Aqua QA][aqua-img]][aqua-url] |
 
 [docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
 [docs-stable-url]: https://manybodylab.github.io/TensorKitAdapters.jl/stable

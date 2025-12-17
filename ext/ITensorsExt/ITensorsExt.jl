@@ -2,6 +2,8 @@ module ITensorsExt
 
 using ITensors 
 using TensorKit
+import TensorKit: TensorMap 
+import ITensors: ITensor
 
 function TensorKit.TensorMap(src::ITensors.ITensor)
     if hasqns(src)

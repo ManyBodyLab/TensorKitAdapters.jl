@@ -53,9 +53,12 @@ function combineblocks_itensor(T::ITensor,inds_old=inds(T))
         C = combiner(ind_old; tags=tags(ind_old))
         new_ind = uniqueind(C,T)
         if inds_old[i].space != new_ind.space
+            inds_T = collect(inds(T))
             T *= C
             new_ind_old_id=Index(ITensors.id(ind_old), new_ind.space, dir(ind_old), tags(ind_old), plev(inds_old[i]))
             T *= delta(dag(new_ind),new_ind_old_id)
+            inds_T[i] = new_ind_old_id
+            T = ITensors.permute(T, inds_T; allow_alias = true)
         end
     end
     return T

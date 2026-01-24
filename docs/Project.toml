@@ -6,4 +6,4 @@ TensorKitAdapters = "365c3f09-11dd-4b21-ae3b-5ed73578a59c"
 [compat]
 Documenter = "1"
 Literate = "2"
-TensorKitAdapters = "0.1"
+TensorKitAdapters = "0.1,0.2"
